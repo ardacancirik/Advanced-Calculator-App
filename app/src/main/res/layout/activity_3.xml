@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FDFAFA"
+    android:backgroundTintMode="src_over"
+    tools:context=".Activity3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLength"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#2196F3"
+            android:text="Length:" />
+
+        <EditText
+            android:id="@+id/numberLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtWidth"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#2196F3"
+            android:text="Width:" />
+
+        <EditText
+            android:id="@+id/numberWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#2196F3"
+            android:text="Height:" />
+
+        <EditText
+            android:id="@+id/numberHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtRadius"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#2196F3"
+            android:text="Radius:" />
+
+        <EditText
+            android:id="@+id/numberRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/txtShapes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Shape:" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="182dp"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btnProcess"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="Process" />
+            </TableRow>
+
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/finalText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#673AB7"
+                android:text="Output"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

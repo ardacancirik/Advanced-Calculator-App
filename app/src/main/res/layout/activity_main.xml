@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView"
+                android:layout_width="800dp"
+                android:layout_height="800dp"
+                android:rotation="90"
+                android:src="@drawable/_02d7e638fb463fb7a266f5ffc7ac47d"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_editor_absoluteY="-99dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="216dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="74dp"
+                android:layout_marginEnd="99dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Welcome to Advanced Calculator App"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FBFBFB"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.361" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="195dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="165dp"
+                android:layout_marginEnd="108dp"
+                android:text="Scıentıfıc Calculator"
+                app:layout_constraintBottom_toTopOf="@+id/buttonGC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonGC"
+                android:layout_width="195dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="108dp"
+                android:text="Geometry Calculator"
+                app:layout_constraintBottom_toTopOf="@+id/buttonBinary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <Button
+                android:id="@+id/buttonBinary"
+                android:layout_width="195dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="480dp"
+                android:layout_marginEnd="108dp"
+                android:layout_marginBottom="182dp"
+                android:text="Bınary Calculator"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/buttonGuides"
+                android:layout_width="195dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginEnd="108dp"
+                android:layout_marginBottom="80dp"
+                android:text="Guide"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonBinary"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

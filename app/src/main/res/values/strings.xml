@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Advanced Calculator App</string>
+
+    <string-array name="Shapes">
+        <item>Rectangle</item>
+        <item>Triangle</item>
+        <item>Box</item>
+        <item>Circle</item>
+        <item>Sphere</item>
+    </string-array>
+</resources>
